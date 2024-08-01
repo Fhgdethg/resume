@@ -140,7 +140,36 @@ ol {
       color: $grayCol;
       font-style: italic;
     }
+
+    &__pdf-cv-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 55px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
   }  
+}
+
+@media screen and (max-width: 875px) {
+  .block {
+    .main {
+      &__pdf-cv-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+
+        a {
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 735px) {
