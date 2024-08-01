@@ -3,9 +3,9 @@ function isMobile() {
   return platforms.includes(navigator.platform);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const isPhone = isMobile();
-  if (isPhone) {
-    document.querySelector('.main__pdf-cv-links a:last-child').style.display = 'none';
-  }
+
+  if (isPhone)
+    document.querySelector('.view-link').style.display = 'none';
 });
