@@ -1,6 +1,5 @@
 function isMobile() {
-  const platforms = ['iPhone', 'iPad', 'iPod', 'Android', 'webOS', 'BlackBerry', 'Windows Phone', 'Opera Mini', 'IEMobile'];
-  return platforms.includes(navigator.platform);
+  return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
