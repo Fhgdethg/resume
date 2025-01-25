@@ -131,6 +131,11 @@ ol {
 
     .education__university {
       color: $orangeCol;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+        display: block;
+      }
     }
 
     &__time-create {
