@@ -1,2 +1,7 @@
 /node_modules
 /.idea
+dist/.DS_Store
+.DS_Store
+dist/img/.DS_Store
+src/.DS_Store
+src/img/.DS_Store
